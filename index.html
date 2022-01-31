@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Project</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap JavaSrcipt -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- my stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- icons from fontawesom -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet" </head>
+
+<body>
+  <section id="title" class="colored-section position-relative">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-custom container-fluid navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <h1 class="compname">PenGuys</h1>
+        </a>
+        <!-- toggler -->
+        <button class="navbar-toggler ms-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars toggler-custom-icon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link py-2" href="#features">Features</a>
+            <a class="nav-link py-2" href="#testimonials">Reviews</a>
+            <a class="nav-link py-2" href="#pricing">Plans</a>
+            <a class="nav-link py-2" href="#footer">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Contents-->
+    <div class="row container-fluid content">
+      <div class="col-lg-8 py-5 mx-0">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <h1 class="mb-0 first-text big-heading">A pen. Simple. Reliable.</h1>
+          </div>
+          <!-- buy button -->
+          <div class="col-lg-12">
+            <button type="button" class="btn btn-primary btn-lg btn1 btn-mobile my-0 fw-bold">
+              <i class="fas fa-crown"></i>
+              Buy pen
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 position-relative height-change">
+        <img src="Images/pen.png" class="img1 pen1" alt="cool pen png">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="feature-container row container-fluid mx-auto text-center gx-5 gy-5">
+      <div class="col-lg-4 feature-box">
+        <i class="fab fa-accessible-icon icon_features"></i>
+        <h3 class="medium-heading">Accessible</h3>
+        <p class="undertext">You can use it even on a wheelchair. Don't stick in the wheel though.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fas fa-star icon_features"></i>
+        <h3 class="medium-heading">Stand out</h3>
+        <p class="undertext">Most people use styluses, you use pen. Be different, be great. </p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fas fa-thumbs-up icon_features"></i>
+        <h3 class="medium-heading">Father approval</h3>
+        <p class="undertext">Your dad will love the fact you're using a pen. He will be finally proud of you.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials" class="colored-section">
+    <div id="testimon-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimon-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimon-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner container-fluid">
+        <div class="carousel-item active text-center">
+          <h2 class="testimonals-heading">With this pen I feel like people listen to me more.</h2>
+          <img class="testimonial-image" src="images/office1.jpeg" alt="office steve">
+          <em class="undertext">Steve, New York</em>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="testimonals-heading">I've used it and I love it.</h2>
+          <img class="testimonial-image" src="images/jason.jpeg" alt="jason statham">
+          <em>Jason, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimon-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimon-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </div>
+  </section>
+
+
+  <!-- Press -->
+
+  <!-- <section id="press">
+    <img class="press-section" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-section" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-section" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-section" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+ -->
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <div class="container-fluid mx-auto mt-5 mb-0 pb-0 text-center pricing-tag-text text-capitalize">
+      <h1 class="big-heading">We offer flexebility</h1>
+      <p class="undertext">Simple and affordable price plans for your pen.</p>
+    </div>
+
+    <div class="row container-fluid mx-auto text-center g-3">
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-4 rounded-3 shadow-sm h-100 d-flex">
+          <div class="card-header py-3">
+            <h3 class="mb-0">Proud dad</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title pricing-card-title">$50</h1>
+            <ul class="list-unstyled mt-3 mb-4 text-capitalized">
+              <li class="undertext">A pen</li>
+              <li class="undertext">1 month guarantee</li>
+              <li class="undertext">10ml of elite ink</li>
+              <li class="undertext">Email support</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn2 btn-outline-primary mt-auto mb-3">Get that plan</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-4 rounded-3 shadow-sm h-100 card-outline">
+          <div class="card-header py-3">
+            <h3 class="mb-0">Cool man</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title pricing-card-title">$200</h1>
+            <ul class="list-unstyled mt-3 mb-4 text-capitalized">
+              <li class="undertext">A pen</li>
+              <li class="undertext">First 2 years free rapairs</li>
+              <li class="undertext">1000ml of elite ink</li>
+              <li class="undertext">Email support</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary mt-auto mb-3 btn1 btn-text" name="button">Get that plan</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 rounded-3 shadow-sm h-100 card-outline">
+          <div class="card-header py-3 header-bg">
+            <h3 class="mb-0">Superstar</h3>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/yr</small></h1>
+            <ul class='list-unstyled mt-3 mb-4 text-capitalized'>
+              <li class="undertext">A pen</li>
+              <li class="undertext">Unlimited Repairs</li>
+              <li class="undertext">Unlimited Elite Ink</li>
+              <li class="undertext">Become A Member Of A Pen Club</li>
+              <li class="undertext">Phone support</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary mt-auto mb-3 btn1 btn-text" name="button"> Get that plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta" class="colored-section">
+
+    <div class="container-fluid mx-auto text-center fw-bold">
+      <h1 class="cta-text">Simple. Changes life. <br class="breakpoint">Can be done today.</h1>
+      <button type="button" class="btn btn-lg btn1 fw-bold my-0 mb-0 btn-mobile"><i class="fas fa-crown"></i> Buy pen</button>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid mx-auto py-2 mt-3 text-center text-muted">
+      <i class="icon-footer fab fa-facebook-f"></i>
+      <i class="icon-footer fab fa-instagram"></i>
+      <i class="icon-footer fab fa-twitter"></i>
+      <i class="icon-footer fab fa-vk"></i>
+      <i class="icon-footer fas fa-envelope"></i>
+      <p>©Copyright 2021 PenGuys</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

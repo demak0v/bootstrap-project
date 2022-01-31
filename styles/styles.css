@@ -1,0 +1,305 @@
+
+
+/* HTML ELEMENT STYLES */
+body {
+  background-color: #f4f3ee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+
+/* HEADING STYLING */
+
+.big-heading {
+  font-size: 380%;
+}
+
+.testimonals-heading {
+  font-size: 280%;
+}
+
+.undertext {
+  font-size: 120%;
+}
+
+.medium-heading {
+  font-size: 200%;
+}
+
+/* BUTTON RECOLORING */
+
+.colored-section {
+  background-color: #463f3a;
+  color: #f4f3ee;
+}
+
+      /* NORMAL BUTTON */
+
+.btn1 {
+  background-color: #e0afa0;
+  border-color: #e0afa0;
+  color: #f4f3ee;
+}
+
+.btn1:active, .btn1:hover, .btn1-visited {
+  background-color: #d79783;
+  border-color: #d79783;
+}
+
+.btn1:active:focus, .btn1:hover:focus, .btn1:focus {
+  background-color: #d79783;
+  border-color: #d79783;
+  box-shadow: 0 0 0 0.25rem rgba(224, 175, 160, 0.5)
+}
+
+    /* OUTLINED BUTTON */
+.btn1, .btn2, .btn-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn2 {
+  border-color: #e0afa0;
+  color: #e0afa0;
+}
+
+.btn2:active, .btn2:hover, .btn2-visited {
+  background-color: #e0afa0;
+  border-color: #e0afa0;
+  color: #463f3a;
+}
+
+.btn2:active:focus, .btn2:hover:focus, .btn2:focus {
+  border-color: #d79783;
+  box-shadow: 0 0 0 0.25rem rgba(224, 175, 160, 0.5)
+}
+
+.btn-text {
+  color: #463f3a;
+}
+/* TITLE SECTION */
+
+#title {
+  padding-bottom: 5%;
+  overflow: hidden;
+}
+
+    /* MENU/NAVBAR RECOLOR */
+
+.nav-link, .navbar-light, .navbar-nav {
+  color: #8f8f8f;
+  padding-bottom: 0;
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 140%;
+}
+
+.navbar-toggler, .custom-toggler {
+  border-color: #e0afa0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover, .nav-link:active, .navbar-toggler, .navbar-toggler-icon {
+  color: #e0afa0
+}
+
+.nav-link:active:focus, .nav-link:hover:focus, .nav-link:focus {
+  color: #e0afa0;
+}
+
+      /* CONTAINER FOR NAVBAR ADJUSTMENT */
+
+.navbar>.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+
+    /* PEN GUYS LOGO */
+
+.compname {
+  font-family: 'Bad Script', cursive;
+  font-size: 1.5em;
+  color: #f4f3ee;
+  margin: 0;
+  position: relative;
+}
+
+
+.first-text {
+  position: relative;
+  display: inline;
+  z-index: 1;
+  white-space: nowrap;
+  color: #f4f3ee;
+}
+
+/* блок для эффекта проезжающего фона у текста
+добавляем пустой элемент, который сразу же трансформируем в 0, уходящий вправо вниз
+(можно и просто вправо, главное, что он скалируется именно в ту сторону)
+далее делаем его полностью задним фоном с помощью inset
+наша транзиция при ховере будет как раз в его трансформации вправо
+з индекс чтобы за текстом был*/
+.first-text::before {
+  transform: scaleX(0);
+  transform-origin: right;
+  content: " ";
+  position: absolute;
+  inset: 0 0 0 0;
+  background: #e0afa0;
+  transition: transform .3s ease;
+  /* тут важно именно transform, потому что происходит скалирование */
+  z-index: -1; /* тут важно именно отрицательное, чтобы было за */
+}
+
+/* тут мы говорим что при хавере он выскалирывается полностью, начиная слева
+так и происходит этот эффект
+слева становится 1, потом трансформируется в 0 вправо, когда убираем мышку */
+.first-text:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.container-fluid {
+  padding: 3% 10%
+}
+
+.nav-link, .btn {
+  font-size: 1.3rem;
+}
+
+
+.img1 {
+  position: absolute;
+  transform: rotate(335deg);
+  width: 200%;
+  bottom: 0;
+  left: -15%;
+}
+
+/* FEATURES SECTION */
+
+#features {
+  margin: 7% 0 5% 0;
+}
+
+.icon_features {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #e0afa0;
+  position: relative;
+  transition: color 2s, transform 1s;
+}
+
+.feature-box>p {
+  color: #8f8f8f;
+}
+
+/* hover color change */
+.icon_features:hover {
+  color: gold;
+  transition: color 0.3s ease;
+  /* transform: rotate(360deg); */
+}
+
+/* testimonials section css */
+#testimonials {
+  padding: 5% 0;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover; /*просто охуенная функция — обрезает картинку, а не делает ее уебанской */
+  margin: 10px;
+}
+
+
+/* PRICING SECTION */
+
+.carousel-inner {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item {
+  padding: 0 5%;
+}
+
+.card-outline {
+  border-color: #e0afa0;
+}
+
+.header-bg {
+  background-color: #e0afa0;
+  color: #463f3a;
+}
+
+/* CTA SECTION */
+#cta {
+  padding: 7% 0;
+}
+
+.cta-text {
+  margin-bottom: 5%;
+  font-size: 3rem;
+  position: relative;
+}
+
+.list-unstyled li {
+  padding: 2%;
+}
+
+.breakpoint {
+  display: none;
+}
+
+/* FOOTER SECTION */
+.icon-footer {
+  padding: 3% 1% 2%;
+}
+
+/* @MEDIA QUERIES */
+
+@media (max-width: 1109px) {
+  .breakpoint {
+    display: block;
+  }
+
+  .cta-text {
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pen1 {
+    transform: rotate(-15deg);
+    position: relative;
+    width: 100%;
+    left: 40%;
+    top: -90%;
+  }
+
+      /* CHANGING THE DIV HIGHT TO BE LESS THAN PEN */
+  .height-change {
+    height: 150px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .btn-mobile {
+    font-size: 1.7rem;
+    margin-top: 10%;
+  }
+}
